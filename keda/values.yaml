@@ -1,0 +1,7 @@
+image:
+  keda:
+    repository: docker.io/imroc/keda
+  metricsApiServer:
+    repository: docker.io/imroc/keda-metrics-apiserver
+  webhooks:
+    repository: docker.io/imroc/keda-admission-webhooks
