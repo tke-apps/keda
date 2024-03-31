@@ -10,3 +10,10 @@ helmCharts:
     releaseName: keda
     namespace: keda
     valuesFile: values.yaml
+
+patches:
+  - path: crd-patch.yaml
+    target:
+      kind: CustomResourceDefinition
+      group: apiextensions.k8s.io
+      version: v1
